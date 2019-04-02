@@ -1,0 +1,105 @@
+{
+  "database_url": "mysql://root:123456@127.0.0.1/smoke",
+  "disable_signups": false,
+  "facebook_app_id": false,
+  "grant": {
+    "facebook": {
+      "callback": "/handle_facebook_callback",
+      "key": "",
+      "scope": [
+        "email",
+        "user_location"
+      ],
+      "secret": ""
+    },
+    "reddit": {
+      "callback": "/handle_reddit_callback",
+      "custom_params": {
+        "duration": "temporary",
+        "state": "void"
+      },
+      "key": "",
+      "scope": [
+        "identity"
+      ],
+      "secret": ""
+    },
+    "server": {
+      "host": "localhost:3002",
+      "protocol": "http"
+    }
+  },
+  "google_analytics_id": "UA-106330268-3",
+  "helmet": {
+    "directives": {
+      "childSrc": "'self' www.youtube.com staticxx.facebook.com w.soundcloud.com player.vimeo.com www.theweedtube.com emb.d.tube player.twitch.tv www.twitch.tv",
+      "connectSrc": "'self' smoke.io rpc.smoke.io https://rpc.smoke.io wss://rpc.smoke.io pubrpc.smoke.io",
+      "defaultSrc": "'self' www.youtube.com staticxx.facebook.com player.vimeo.com",
+      "fontSrc": "data: fonts.gstatic.com",
+      "frameAncestors": "'none'",
+      "imgSrc": "* data:",
+      "objectSrc": "'none'",
+      "pluginTypes": "application/pdf",
+      "scriptSrc": "'self' www.google-analytics.com connect.facebook.net assets.mantisadnetwork.com mantodea.mantisadnetwork.com 'sha256-9MdCJGZqoXb6/d816rvLgJt14oUMkZptgCfncCZfl5k=' secure.quantserve.com rules.quantcount.com",
+      "styleSrc": "'self' 'unsafe-inline' fonts.googleapis.com",
+      "reportUri": "/api/v1/csp_violation"
+    },
+    "reportOnly": false,
+    "setAllHeaders": true
+  },
+  "img_proxy_prefix": "https://smoke.io/smokeimageproxy/",
+  "ipfs_prefix": false,
+  "mixpanel": false,
+  "newrelic": false,
+  "notify": {
+    "gcm_key": "google secret key"
+  },
+  "read_only_mode": false,
+  "recaptcha": {
+    "secret_key": false,
+    "site_key": false
+  },
+  "registrar": {
+    "account": "smoke",
+    "fee": "4.200 SMOKE",
+    "delegation": "0.000000 VESTS",
+    "signing_key": "5J..."
+  },
+  "requestAccountRecovery": {
+    "recovery_account": "steem",
+    "signing_key": "5J..."
+  },
+  "sendgrid": {
+    "from": "noreply@example.com",
+    "key": "SG.xxx_yyyy",
+    "templates": {
+      "confirm_email": false,
+      "waiting_list_invite": false
+    }
+  },
+  "server_session_secret": "exiKdyF+IwRIXJDmtGIl4vWUz4i3eVSISpfZoeYc0s4=",
+  "session_cookie_key": "stm-dev",
+  "session_key": "steemses",
+  "site_domain": "steemitdev.com",
+  "tarantool": {
+    "host": "localhost",
+    "password": "",
+    "port": "3301",
+    "username": "guest"
+  },
+  "telesign": {
+    "customer_id": false,
+    "rest_api_key": false
+  },
+  "twilio": {
+    "account_sid": false,
+    "auth_token": false,
+    "from_mobile": false
+  },
+  "upload_image": false,
+  "steemd_connection_client": "https://pubrpc.smoke.io",
+  "steemd_connection_server": "https://rpc.smoke.io",
+  "chain_id": "1ce08345e61cd3bf91673a47fc507e7ed01550dab841fd9cdb0ab66ef576aaf0",
+  "address_prefix": "SMK",
+  "default_fixed_tags": ["life", "grow", "edibles", "nugporn", "art", "news", "strains", "contest", "review", "cbd", "health", "smoking", "dabs", "legalize","guide", "nsfw", "offtopic", "witness"]
+}
